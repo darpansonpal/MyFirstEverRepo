@@ -17,5 +17,5 @@ test ('open Saucedemologin page', async ({page}) => {
   await page.locator('[data-test="shopping-cart-link"]').click();
   await page.pause(2000);
   await page.locator('[data-test="checkout"]').click();
-  await page.pause(4000);
+  await page.pause(3000);
 });
