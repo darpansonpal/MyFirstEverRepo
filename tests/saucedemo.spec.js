@@ -40,8 +40,8 @@ test ('Open, login, add 3 prods, checkout, assert & verify', async ({page}) => {
   await page.locator('[data-test="finish"]').click();
 
   // This is incomplete but I'd like to write the below as 
-  await page.locator('[data-test="payment-info-value"]').click();
-  await page.locator('[data-test="total-label"]').click();
+  // await page.locator('[data-test="payment-info-value"]').click();
+  // await page.locator('[data-test="total-label"]').click();
 
   // 7. Verifying Thank you for your order is what we get on successful order placement!
   await expect(page.getByText('Checkout: Complete!')).toBeVisible();
